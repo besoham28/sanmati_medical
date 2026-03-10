@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone, Clock, MapPin, ChevronDown } from "lucide-react";
+import { Menu, X, Phone, Clock, MapPin, ChevronDown, User } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const navLinks = [
@@ -83,6 +83,12 @@ const Header = () => {
               </Link>
             )
           )}
+          <Link
+            to="/login"
+            className="px-3 py-2 rounded-full text-sm font-medium shadow-sm transition-all duration-200 mx-0.5 bg-secondary text-secondary-foreground hover:bg-secondary/80 flex items-center gap-1 ml-2"
+          >
+            <User size={16} /> Login
+          </Link>
         </nav>
 
         {/* Mobile toggle */}
@@ -115,6 +121,13 @@ const Header = () => {
               </Link>
             )
           )}
+          <Link
+            to="/login"
+            className="block px-4 py-2.5 my-1 text-sm rounded-lg font-medium transition-colors bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80 flex items-center gap-2"
+            onClick={() => setMobileOpen(false)}
+          >
+            <User size={16} /> Login / Register
+          </Link>
         </nav>
       )}
     </header>

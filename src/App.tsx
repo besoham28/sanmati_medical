@@ -20,6 +20,11 @@ import PrivacyPage from "./pages/PrivacyPage";
 import TermsPage from "./pages/TermsPage";
 import NotFound from "./pages/NotFound";
 
+import Register from "./Admin/Register";
+import Login from "./Admin/login";
+import UserDashboard from "./Admin/UserDashboard";
+import AdminDashboard from "./Admin/AdminDashboard";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -44,6 +49,13 @@ const App = () => (
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/privacy" element={<PrivacyPage />} />
             <Route path="/terms" element={<TermsPage />} />
+
+            {/* Auth and Dashboards */}
+            <Route path="/register" element={<Register />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/user-dashboard" element={<UserDashboard />} />
+            <Route path="/admin-dashboard" element={<AdminDashboard />} />
+
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>
