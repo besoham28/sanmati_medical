@@ -32,10 +32,10 @@ const Header = () => {
       {/* Marquee Announcement Bar */}
       <div className="bg-primary/10 overflow-hidden whitespace-nowrap py-1.5 flex items-center border-b border-primary/20">
         <div className="animate-marquee flex text-primary font-bold uppercase tracking-wider text-xs flex-none">
-          <span className="px-4 shrink-0">• LIVE: Sanmati Medical Stores • Trusted Pharmacy in Bhose • Genuine Medicines • 8:00 AM to 10:00 PM • Order via WhatsApp</span>
-          <span className="px-4 shrink-0">• LIVE: Sanmati Medical Stores • Trusted Pharmacy in Bhose • Genuine Medicines • 8:00 AM to 10:00 PM • Order via WhatsApp</span>
-          <span className="px-4 shrink-0">• LIVE: Sanmati Medical Stores • Trusted Pharmacy in Bhose • Genuine Medicines • 8:00 AM to 10:00 PM • Order via WhatsApp</span>
-          <span className="px-4 shrink-0">• LIVE: Sanmati Medical Stores • Trusted Pharmacy in Bhose • Genuine Medicines • 8:00 AM to 10:00 PM • Order via WhatsApp</span>
+          <span className="px-4 shrink-0">• Sanmati Medical Stores • Trusted Pharmacy in Bhose • Genuine Medicines • 8:00 AM to 10:00 PM • Order via WhatsApp</span>
+          <span className="px-4 shrink-0">• Sanmati Medical Stores • Trusted Pharmacy in Bhose • Genuine Medicines • 8:00 AM to 10:00 PM • Order via WhatsApp</span>
+          <span className="px-4 shrink-0">• Sanmati Medical Stores • Trusted Pharmacy in Bhose • Genuine Medicines • 8:00 AM to 10:00 PM • Order via WhatsApp</span>
+          <span className="px-4 shrink-0">• Sanmati Medical Stores • Trusted Pharmacy in Bhose • Genuine Medicines • 8:00 AM to 10:00 PM • Order via WhatsApp</span>
         </div>
       </div>
 
