@@ -55,7 +55,8 @@ const Footer = () => (
       </div>
 
       <div className="border-t border-primary-foreground/10 mt-10 pt-6 text-center text-sm opacity-60">
-        © {new Date().getFullYear()} Sanmati Medical Stores, Bhose. All rights reserved.
+        <p className="mb-2">Created and design by BESOHAM</p>
+        <p>© {new Date().getFullYear()} Sanmati Medical Stores, Bhose. All rights reserved.</p>
       </div>
     </div>
   </footer>
