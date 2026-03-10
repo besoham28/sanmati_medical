@@ -56,7 +56,7 @@ const Header = () => {
                 onMouseEnter={() => setDropdownOpen(true)}
                 onMouseLeave={() => setDropdownOpen(false)}
               >
-                <button className={`flex items-center gap-1 px-3 py-2 rounded-full text-sm font-medium transition-all duration-200 hover:text-primary hover:bg-primary/10 ${location.pathname.startsWith("/products") || location.pathname.startsWith("/categories") || location.pathname.startsWith("/health-products") ? "text-primary bg-primary/10" : "text-foreground"}`}>
+                <button className={`flex items-center gap-1 px-3 py-2 rounded-full text-sm font-medium shadow-sm transition-all duration-200 bg-primary text-primary-foreground hover:bg-primary/90 hover:-translate-y-0.5`}>
                   {link.label} <ChevronDown size={14} className={`transition-transform duration-200 ${dropdownOpen ? "rotate-180" : ""}`} />
                 </button>
                 {dropdownOpen && (
@@ -77,13 +77,7 @@ const Header = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`px-3 py-2 rounded-full text-sm font-medium transition-all duration-200 
-                  ${(link.label === "Order Medicine" || link.label === "Upload Prescription")
-                    ? "bg-primary text-primary-foreground shadow-sm hover:bg-primary/90 hover:-translate-y-0.5 ml-1"
-                    : location.pathname === link.path
-                      ? "text-primary bg-primary/10"
-                      : "text-foreground hover:text-primary hover:bg-primary/10"
-                  }`}
+                className={`px-3 py-2 rounded-full text-sm font-medium shadow-sm transition-all duration-200 mx-0.5 bg-primary text-primary-foreground hover:bg-primary/90 hover:-translate-y-0.5`}
               >
                 {link.label}
               </Link>
@@ -114,13 +108,7 @@ const Header = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`block px-4 py-2.5 my-0.5 text-sm rounded-lg transition-colors
-                  ${(link.label === "Order Medicine" || link.label === "Upload Prescription")
-                    ? "bg-primary text-primary-foreground font-medium"
-                    : location.pathname === link.path
-                      ? "text-primary bg-primary/10 font-medium"
-                      : "text-foreground hover:bg-primary/5 active:bg-primary/10"
-                  }`}
+                className={`block px-4 py-2.5 my-1 text-sm rounded-lg font-medium transition-colors bg-primary text-primary-foreground shadow-sm hover:bg-primary/90`}
                 onClick={() => setMobileOpen(false)}
               >
                 {link.label}
