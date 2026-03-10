@@ -29,6 +29,16 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50 bg-card/95 backdrop-blur-md border-b border-border">
+      {/* Marquee Announcement Bar */}
+      <div className="bg-primary/10 overflow-hidden whitespace-nowrap py-1.5 flex items-center border-b border-primary/20">
+        <div className="animate-marquee flex text-primary font-bold uppercase tracking-wider text-xs flex-none">
+          <span className="px-4 shrink-0">• LIVE: Sanmati Medical Stores • Trusted Pharmacy in Bhose • Genuine Medicines • 8:00 AM to 10:00 PM • Order via WhatsApp</span>
+          <span className="px-4 shrink-0">• LIVE: Sanmati Medical Stores • Trusted Pharmacy in Bhose • Genuine Medicines • 8:00 AM to 10:00 PM • Order via WhatsApp</span>
+          <span className="px-4 shrink-0">• LIVE: Sanmati Medical Stores • Trusted Pharmacy in Bhose • Genuine Medicines • 8:00 AM to 10:00 PM • Order via WhatsApp</span>
+          <span className="px-4 shrink-0">• LIVE: Sanmati Medical Stores • Trusted Pharmacy in Bhose • Genuine Medicines • 8:00 AM to 10:00 PM • Order via WhatsApp</span>
+        </div>
+      </div>
+
       {/* Top bar */}
       <div className="gradient-medical">
         <div className="container mx-auto flex flex-wrap items-center justify-between px-4 py-2 text-sm text-primary-foreground">
